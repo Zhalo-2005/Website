@@ -1,0 +1,23 @@
+Generating initial reviews data...
+[2025-10-04T03:53:04.854Z] Using cached reviews
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8082
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (/workspace/Website/review-server/node_modules/express/lib/application.js:635:24)
+    at startServer (/workspace/Website/review-server/server.js:196:13)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8082
+}
+
+Node.js v20.19.5

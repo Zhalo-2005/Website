@@ -1,0 +1,97 @@
+name: Auto Update Reviews
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+  
+  # Run on push to main branch
+  push:
+    branches: [ main ]
+    paths:
+      - 'review-server/**'
+      - '.github/workflows/update-reviews.yml'
+
+jobs:
+  update-reviews:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: review-server/package-lock.json
+        
+    - name: Install dependencies
+      working-directory: ./review-server
+      run: |
+        npm install
+        npm install -g pm2
+        
+    - name: Fetch latest reviews
+      working-directory: ./review-server
+      env:
+        NODE_ENV: production
+      run: |
+        node fetch-reviews.js
+        
+    - name: Start review server
+      working-directory: ./review-server
+      env:
+        NODE_ENV: production
+        PORT: 3001
+      run: |
+        pm2 start server.js --name review-server
+        pm2 save
+        
+    - name: Test review server
+      run: |
+        sleep 5
+        curl -f http://localhost:3001/api/health || exit 1
+        curl -f http://localhost:3001/reviews.json || exit 1
+        
+    - name: Commit updated reviews
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        
+        if [ -f "public/reviews.json" ]; then
+          git add public/reviews.json
+          git commit -m "Auto-update reviews from FiveBrowse" || echo "No changes to commit"
+        fi
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        
+    - name: Cleanup
+      if: always()
+      working-directory: ./review-server
+      run: |
+        pm2 stop review-server || true
+        pm2 delete review-server || true
+
+  deploy:
+    needs: update-reviews
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Deploy to production
+      run: |
+        echo "Deployment would happen here"
+        # Add your deployment commands here
+        # For example: rsync, ftp, or API calls to your hosting provider
