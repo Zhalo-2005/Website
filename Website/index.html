@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unrestricted Roleplay</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="footer-fix.css">
+    <script src="main.js" defer></script>
+    <script src="enhanced.js" defer></script>
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="https://unrestricted.tebex.io/">Store</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Open mobile menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="server-status">
+                <span class="status-dot"></span>
+                <span id="server-info">Checking server...</span>
+            </div>
+            <p>  </p>
+            <img src="logo.gif" alt="unrestresticed Roleplay" class="hero-title-gif">
+            <div class="hero-buttons">
+                <a href="https://cfx.re/join/jyrm3l" class="btn btn-primary">Connect 🚀</a>
+                <a href="https://discord.gg/vCmKEg4h" class="btn btn-secondary">Join Discord 💬</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+
+    <!-- Features Section -->
+    <section class="features reveal" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Unrestricted RP?</h2>
+                <p class="section-subtitle">Experience true freedom with scripts, premium features, and next-level roleplay.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3 class="feature-title">Custom Vehicles</h3>
+                    <p class="feature-description">Over 500 custom vehicles including supercars, motorcycles, emergency vehicles, and unique imports you won't find anywhere else.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-title">Business System</h3>
+                    <p class="feature-description">Own and operate legitimate businesses, from car dealerships to restaurants. Build your empire and create jobs for other players.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👮</div>
+                    <h3 class="feature-title">Realistic Police</h3>
+                    <p class="feature-description">Advanced police systems with realistic procedures, court cases, and a justice system that creates compelling criminal vs law storylines.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3 class="feature-title">Housing & Properties</h3>
+                    <p class="feature-description">Buy, sell, and customize properties. From luxury penthouses to gang hideouts, make Unrestricted your home.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💊</div>
+                    <h3 class="feature-title">Drug System</h3>
+                    <p class="feature-description">Complex drug manufacturing and distribution system with territories, rivalries, and high-stakes criminal enterprises.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3 class="feature-title">Character Development</h3>
+                    <p class="feature-description">Deep character progression system with skills, reputation, and relationships that matter. Your choices shape your story.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs reveal" id="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Path</h2>
+                <p class="section-subtitle">From law enforcement to criminal enterprises, find your role in Unrestricted</p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-icon">👮‍♂️</div>
+                    <h3 class="job-title">Police Officer</h3>
+                    <p class="job-description">Protect and serve the citizens of Unrestricted. Investigate crimes, make arrests, and maintain order in the city.</p>
+                    <div class="job-salary">£2,500 - £4,500/hour</div>
+                </div>
+                
+                <div class="job-card">
+                    <div class="job-icon">🚑</div>
+                    <h3 class="job-title">UHS Paramedic</h3>
+                    <p class="job-description">Save lives and provide medical assistance. Respond to emergencies and keep the city healthy.</p>
+                    <div class="job-salary">£2,000 - £3,500/hour</div>
+                </div>
+                
+                <div class="job-card">
+                    <div class="job-icon">⚖️</div>
+                    <h3 class="job-title">Lawyer</h3>
+                    <p class="job-description">Defend clients in court, negotiate deals, and navigate the complex legal system of Unrestricted.</p>
+                    <div class="job-salary">£3,000 - £6,000/hour</div>
+                </div>
+                
+                <div class="job-card">
+                    <div class="job-icon">🔧</div>
+                    <h3 class="job-title">Mechanic</h3>
+                    <p class="job-description">Fix and customize vehicles for the city's residents. Run your own garage or work for established shops.</p>
+                    <div class="job-salary">£1,800 - £3,200/hour</div>
+                </div>
+                
+                <div class="job-card">
+                    <div class="job-icon">🚚</div>
+                    <h3 class="job-title">Delivery Driver</h3>
+                    <p class="job-description">Transport goods across the city. From legal deliveries to more questionable cargo operations.</p>
+                    <div class="job-salary">£1,500 - £2,800/hour</div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-icon">🏪</div>
+                    <h3 class="job-title">Store Owner</h3>
+                    <p class="job-description">Run your own retail business. Stock inventory, serve customers, and build your commercial empire.</p>
+                    <div class="job-salary">£2,200 - £4,000/hour</div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-icon">🚖</div>
+                    <h3 class="job-title">Taxi</h3>
+                    <p class="job-description">Pick up and transport passengers across the city while earning money for each trip.</p>
+                    <div class="job-salary">£2,200 - £4,000/hour</div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-icon">⛏️</div>
+                    <h3 class="job-title">Mining</h3>
+                    <p class="job-description">Head to the mines to extract valuable ores and materials that can be sold or refined.</p>
+                    <div class="job-salary">£1,800 - £3,500/hour</div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-icon">🎪</div>
+                    <h3 class="job-title">Criminal</h3>
+                    <p class="job-description">Choose the life of crime. Rob banks, run illegal operations, but beware of the consequences.</p>
+                    <div class="job-salary">£??? - High Risk/Reward</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<!-- Supporters Section -->
+<section class="features reveal" id="supporters">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Supporters</h2>
+            <p class="section-subtitle">We proudly work with amazing people that help make Unrestricted RP possible.</p>
+        </div>
+        
+        <div class="features-grid">
+            <!-- A19 Customs -->
+            <div class="feature-card">
+                <img src="a19-customs.png" alt="A19 Customs" class="supporter-logo">
+                <h3 class="feature-title">A19 Customs</h3>
+                <p class="feature-description">Our trusted friend for high-quality custom vehicle development. They create both civilian and emergency service vehicles, so make sure to show them some love!</p>
+                <a href="https://a19customs.tebex.io/" target="_blank" class="supporter-btn">❤️ Show Some Love</a>
+            </div>
+            <!-- Fiveroster -->
+            <div class="feature-card">
+                <img src="fiveroster.png" alt="Fiveroster" class="supporter-logo">
+                <h3 class="feature-title">FiveRoster</h3>
+                <p class="feature-description">The roster app we use to keep everything organized and efficient.</p>
+                <a href="https://fiveroster.com/" target="_blank" class="supporter-btn">❤️ Show Some Love</a>
+            </div>
+            <div class="feature-card">
+                <img src="fivebrowse.png" alt="FiveBrowse" class="supporter-logo">
+                <h3 class="feature-title">FiveBrowse</h3>
+                <p class="feature-description">FiveBrowse Helping with getting your server out there to more people</p>
+                <a href="https://fivebrowse.com/" target="_blank" class="supporter-btn">❤️ Show Some Love</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add some button styling -->
+<style>
+    .supporter-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 18px;
+        background-color: #ff4d6d;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .supporter-btn:hover {
+        background-color: #e03a58;
+    }
+</style>
+
+   
+    <!-- Staff Section -->
+    <section class="staff reveal" id="staff">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Staff</h2>
+                <p class="section-subtitle">Dedicated team members ensuring the best roleplay experience</p>
+            </div>
+            
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <div class="avatar-placeholder">👑</div>
+                    </div>
+                    <h3 class="staff-name">Zhalo</h3>
+                    <div class="staff-role owner">Owner/ Head developer</div>
+                    <p class="staff-description"></p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <div class="avatar-placeholder">👑</div>
+                    </div>
+                    <h3 class="staff-name">Icy</h3>
+                    <div class="staff-role co-owner">Co-Owner</div>
+                    <p class="staff-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Supporters Section -->    
+    <!-- CTA Section -->
+    <section class="cta reveal">
+        <div class="container">
+            <h2>Ready to Start Your Story?</h2>
+            <p>Join the most advanced FiveM roleplay experience. Your adventure in Unrestricted begins now.</p>
+            <div class="hero-buttons">
+                <a href="https://cfx.re/join/jyrm3l" class="btn btn-primary">Join Server Now 🚀</a>
+                <a href="#" class="btn btn-secondary">View Rules 📋</a>
+            </div>
+        </div>
+    </section>
+   <!-- Gallery Section -->
+   <section class="gallery reveal" id="gallery">
+       <div class="container">
+           <div class="section-header">
+               <h2 class="section-title">Server Gallery</h2>
+               <p class="section-subtitle">Take a look at what makes Unrestricted RP special</p>
+           </div>
+           
+           <div class="gallery-grid">
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?w=800" alt="Police Operations">
+                   <div class="gallery-caption">
+                       <h3>Police Operations</h3>
+                       <p>Professional law enforcement in action</p>
+                   </div>
+               </div>
+               
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" alt="Custom Vehicles">
+                   <div class="gallery-caption">
+                       <h3>Custom Vehicles</h3>
+                       <p>Over 500 unique vehicles to choose from</p>
+                   </div>
+               </div>
+               
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800" alt="City Life">
+                   <div class="gallery-caption">
+                       <h3>City Life</h3>
+                       <p>Immersive urban roleplay experience</p>
+                   </div>
+               </div>
+               
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="Business District">
+                   <div class="gallery-caption">
+                       <h3>Business District</h3>
+                       <p>Own and operate your own businesses</p>
+                   </div>
+               </div>
+               
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800" alt="Emergency Services">
+                   <div class="gallery-caption">
+                       <h3>Emergency Services</h3>
+                       <p>Realistic EMS and medical roleplay</p>
+                   </div>
+               </div>
+               
+               <div class="gallery-item">
+                   <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Community Events">
+                   <div class="gallery-caption">
+                       <h3>Community Events</h3>
+                       <p>Regular events and activities</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Testimonials Section -->
+   <section class="testimonials reveal" id="testimonials">
+       <div class="container">
+           <div class="section-header">
+               <h2 class="section-title">What Players Say</h2>
+               <p class="section-subtitle">Real reviews from FiveBrowse - 5.0 out of 5 stars (6 Reviews)</p>
+           </div>
+           
+           <div class="testimonials-grid">
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"One of the best upcoming role play servers out there amazing staff team the best owners/founders Zhalo + Icy bringing the best fiveM experience possible"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>𝕬𝖙𝖔𝖒𝖓</h4>
+                           <p>5 Stars - Oct 3, 2025</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"one of the best server i played has good staff nice people over all great server"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>Green</h4>
+                           <p>5 Stars - Oct 2, 2025</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"When I first joined the server, I did not know what to do. So I approached the lovely staff who helped me out so much it was unreal!!"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>Zane</h4>
+                           <p>5 Stars - Oct 2, 2025</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"great server gotta love it"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>XRYZKI</h4>
+                           <p>5 Stars - Oct 2, 2025</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"Good looking server so far can not wait to see what it looks like when it drops"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>Dr_Spitfire</h4>
+                           <p>5 Stars - Oct 2, 2025</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="testimonial-card">
+                   <p class="testimonial-text">"Amazing people! Joined to just fined a place to call home and i found it just some lovely people and not money hungry"</p>
+                   <div class="testimonial-author">
+                       <div class="author-avatar">⭐</div>
+                       <div class="author-info">
+                           <h4>gamerswhocook</h4>
+                           <p>5 Stars - Oct 2, 2025</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div style="text-align: center; margin-top: 3rem;">
+               <a href="https://fivebrowse.com/servers/H57QYsV1" class="btn btn-primary" target="_blank">
+                   Leave a Review on FiveBrowse ⭐
+               </a>
+           </div>
+       </div>
+   </section>
+               <p class="section-subtitle">Everything you need to know about joining Unrestricted RP</p>
+           </div>
+           
+           <div class="faq-container">
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>How do I join the server?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>Simply click the "Connect" button on our homepage or use the server code "jyrm3l" in FiveM. Make sure you have FiveM installed and join our Discord for whitelist information if required.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>Do I need to be whitelisted?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>Check our Discord server for current whitelist requirements. Some roles may require applications, but general access is typically open to all players who follow our rules.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>What are the server requirements?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>You need a legal copy of GTA V, FiveM installed, a working microphone for voice chat, and a stable internet connection. We recommend at least 8GB RAM for optimal performance.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>Can I play as a criminal?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>Absolutely! We support both legal and criminal roleplay. You can run businesses, join gangs, participate in heists, or pursue a life of crime - just remember to roleplay realistically and follow server rules.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>How do I apply for police or EMS?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>Join our Discord server and check the applications channel. You will need to fill out an application form and may need to attend an interview. Make sure you meet the minimum playtime requirements.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <div class="faq-question">
+                       <span>Is there an age requirement?</span>
+                       <span class="faq-icon">+</span>
+                   </div>
+                   <div class="faq-answer">
+                       <p>Yes, players must be at least 16 years old to join our server. This ensures mature roleplay and helps maintain a respectful community environment.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Community</h3>
+            <ul>
+                <li><a href="https://discord.gg/vCmKEg4h" target="_blank" aria-label="Join our Discord server">Discord Server</a></li>
+                <li><a href="https://www.tiktok.com/@unrestricted_rp" target="_blank" aria-label="Join our Discord server">Tiktok</a></li>
+                <li><a href="https://www.youtube.com/@Unrestricted_roleplay" target="_blank" aria-label="Join our Discord server">Youtube</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Server Info</h3>
+            <ul>
+                <li><a href="rules.html" aria-label="View server rules">Server Rules</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="https://discord.gg/vCmKEg4h" aria-label="Get support for the server">Contact Support</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Unrestricted Roleplay. Made with love by Zhalo05. All rights reserved. Not affiliated with Rockstar Games.</p>
+    </div>
+</footer>
+
+
+    <!-- Discord Widget -->
+    <a href="https://discord.gg/vCmKEg4h" class="discord-widget">
+        💬 Join Discord
+    </a>
+
+
+</body>
+   <!-- Back to Top Button -->
+   <button class="back-to-top" id="backToTop" aria-label="Back to top">
+       ↑
+   </button>
+</html>
